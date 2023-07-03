@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/images/logo.png" >
+    <title>Exam</title>
+    
+    <link rel="stylesheet" href="/bootstrap-4.6.2-dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="css/exam.css">
+    <script type="text/javascript" src="https://unpkg.com/external-svg-loader@latest/svg-loader.min.js" async=""></script>
+</head>
+<style></style>
+<body >
+    <nav class="navbar navbar-expand-lg bg-white border p-2 ">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#"><svg  data-src="/images/logo3.svg" class="invo-logo" ></svg></a>
+                <button onclick="sideNavbar('open')" class="navbar-toggler btn-toggle" type="button" >
+                <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i> </span>
+                </button>
+                <div class="collapse navbar-collapse collapse__relative" id="navbarNav">
+                    <ul class="navbar-nav navbar__links mx-auto">
+                        <li class="nav-item  nav__a nav__hover  active">
+                            <a class="nav-link nav-link__a" href="#">Home <span class="sr-only">(current)</span></a>
+                            
+                        </li>
+                        <li class="nav-item nav__a nav__hover">
+                            <a class="nav-link nav-link__a" href="#">Courses</a>
+                        </li>
+                        <li class="nav-item nav__a nav__hover">
+                            <a class="nav-link nav-link__a " href="#">Exams</a>
+                        </li>
+                        <li class="nav-item nav__a nav__hover">
+                            <a class="nav-link nav-link__a" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item nav__a nav__hover">
+                            <a class="nav-link nav-link__a " href="#">FAQ</a>
+                        </li>  
+                        <form class="div__input__search hidden_search">
+                          <input class="input__search form-control" type="text" placeholder="Search by Name,id,etc">
+                      </form> 
+                    </ul>
+                    <button onclick="searchInputDisplay()" class="btn  pt-2 nav__button-search"><svg data-src="/images/Icon feather-search.svg" class="nav__search-svg" ></svg></button>
+        <div class="btn-group mr-5   div-avatar">
+              <button type="button " class="btn nav__profile-toggle dropdown-toggle  " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="a__toggle-profile circle ">
+                  <img src="/images/profile.png" class="avatar" >
+                </a>
+              </button>
+              <div class="dropdown-menu profile ">
+                  <a class="dropdown-item profile-item" href="#"><svg class="mr-3 profile__svg" data-src="/home - user/profileMenuIcon.svg" ></svg> UPDATE PROFILE </a>
+                  <a class="dropdown-item profile-item" href="#"><svg class="mr-3 profile__svg" data-src="/home - user/activationMenuIcon.svg" ></svg> ACTIVATION</a>
+                  <a class="dropdown-item profile-item" href="#"><svg class="mr-3 profile__svg" data-src="/home - user/academyMenuIcon.svg" ></svg> ACADEMIES </a>
+                  <a class="dropdown-item profile-item" href="#"><svg class="mr-3 profile__svg" data-src="/home - user/progressMenuIcon.svg" ></svg> MY PROGRESS</a>
+                  <a class="dropdown-item profile-item" href="#"><svg class="mr-3 profile__svg" data-src="/home - user/calenderMenuIcon.svg" ></svg> CALENDER </a>
+                  <a class="dropdown-item profile-item" href="#"><svg class="mr-3 profile__svg" data-src="/home - user/todolistMenuIcon.svg" ></svg> TODO LIST </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item profile-item" href="#"><svg class="mr-3" data-src="/home - user/logOtMenuIcon.svg" ></svg> LOG OUT </a>
+              </div>
+            </div>
+        </div>
+      </div> 
+    </nav>
+        
+        <div class="side ">
+
+          <div class="side__white "  >
+            <div class="side__close " >
+            <button onclick="sideNavbar('close')" class="btn side__close-button "><svg class="side__close__svg" data-src="/images/x.svg"></svg></button>
+            </div>
+            <div class="ml-3  div-avatar ">
+              <a class="a-img circle  "><img src="/images/male.webp" class="avatar" alt="avatar" ></a>
+              <h6 class="pt-3 ml-2 avatar-name pb-3">Mustafa Ibrahim</h6>
+              </div>
+              <hr>
+              <ul class="side-list">
+                <li class="side-item"><a>Home</a></li>
+                <li class="side-item"><a>Courses</a></li>
+                <li class="side-item"><a>Exams</a></li>
+                <li class="side-item"><a>Pricing</a></li>
+                <li class="side-item"><a>Faq</a></li>
+              </ul>
+              <hr>
+              <ul class="side-list">
+                <li class="side-item"><a>Contact us</a></li>
+                <li class="side-item"><a>About us</a></li>
+                <li class="side-item"><a>Terms & Conditions</a></li>
+                <li class="side-item"><a>Privacy Policy</a></li>
+                
+              </ul>
+              <hr>
+              <div class="div-logout">
+                <svg   data-src="/images/Layer 8.svg"></svg>
+                <h6 class="h-logout "><a>Log out</a></h6>
+              </div>
+          </div>
+          
+          <div class="side__grey" onclick="sideNavbar('close')"></div>
+          
+        </div>
+
+
+              <nav class=" pt-2 " aria-label="breadcrumb">
+                <ol class="breadcrumb breadcrumb__ol  pl-4 ">
+                  <li class="breadcrumb-item breadcrumb__li pl-5 mr-2 "><a href="#"><svg data-src="/images/Search results for Home - Flaticon-2.svg"></svg></a></li>
+                  <span class="span_i "><i class="fa-solid fa-caret-right"></i></span>
+                  <li class="breadcrumb-item  breadcrumb__li pt-1">Exams</li>
+                  <span class="span_i  "><i class="fa-solid fa-caret-right"></i></span>
+                  <li class="breadcrumb-item  breadcrumb__li pt-1">SAT</li>
+                  <span class="span_i  "><i class="fa-solid fa-caret-right"></i></span>
+                  <li class="breadcrumb-item  breadcrumb__li pt-1">Test Name</li>
+                  
+                </ol>
+              </nav> 
+
+        <div class="exam-nav__container pt-2 pb-4 ml-5 " >
+            <ul class="exam-nav__icons pt-1 ">
+              <li class="ml-3"><a onclick="navQuestions()" class="pr-4" href="#"><svg data-src="/images/Search results for Questions - Flaticon-2 (1).svg"></svg></a></li>
+              <li  class="ml-2"><a onclick="questionFlag()" class="pr-4" href="#"><svg data-src="/images/Search results for Flag - Flaticon-2.svg"></svg></a></li>
+              <li  class="ml-2"><a class="pr-4" href="#"><svg data-src="/images/Search results for Increase font - Flaticon-2 (1).svg"></svg></img></a></li>
+              <li  class="ml-2"><a class="pr-4" href="#"><svg data-src="/images/Search results for Increase font - Flaticon-2.svg"></svg></a></li>
+            </ul>
+            
+          
+            <button class="btn exam-nav__btn  ">End Task</button>
+      
+            <div class=" timer pt-2">
+            <svg class="mr-2 timer__svg  " data-src="/images/Search results for Timer - Flaticon-2 (1).svg"></svg>
+            <span id="timer-count" class="timer-span "></span>
+          </div>
+        </div>
+
+        <div class="modal fade show-navigation-question" data-show="true" id="exampleModalCenter" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-xl" role="document">
+            <div class="question-navigation ">
+            <div class="modal-content">
+              <div class="container-fluid">
+              <div class="modal-header">
+                <h3 class="navigation__tittle">Question Navigation</h3>
+                <button onclick="closeNavigation()" class="btn navigation__btn" > <svg data-src="/images/cross.svg" class="navigation__svg"></svg></button> 
+              </div>
+
+              <div class="modal-body">
+                  <div class="navigation__filter pb-5" >
+                      <button class="navigation__filter-button btn">All</button>
+                      <button class="navigation__filter-button btn">Answered</button>
+                      <button class="navigation__filter-button btn">Not Answered</button>
+                      <button class="navigation__filter-button btn">Flagged</button>
+                      <button class="navigation__filter-button btn">Not Flagged</button>
+                  </div>
+                  <table class="table">
+                      <thead>
+                        <tr class="head-table">
+                          <th scope="col">#</th>
+                          <th scope="col">State</th>
+                          <th scope="col">Flagged</th>
+                          <th scope="col">Your Answer Number</th>
+                        </tr>
+                      </thead>
+          
+                      <tbody class="table-body">
+                      
+                      </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+      </div>
+      
+      <!--  <section data-question-num="1" class="question-section question-section-show pt-5">
+            <div class="container-fluid" >
+              <div class="row row-question-js">
+                <div class="col-md-6 question-data-js">
+                  <div class="question ml-3" >
+                    <p class="question__head pt-4">Questions 1-10 are based on the following passage.</p>
+                    <p class="question__paragraph pt-3">Akira came directly, breaking all tradition. Was that it? Had he followed form had he asked his mother to speak to his father to approach a Line go-between would Chie have been more receptive? He came on a winter’s eve. He pounded on the door while a cold rain beat on the shuttered veranda, so at first Chie thought him only the wind. The maid knew better. Chie heard her soft scuttling footsteps, the creak of the door. Then the maid brought a 10 calling card to the drawing room, for Chie.</p>
+                    <p class="pt-5 question__paragraph"> Chie was reluctant to go to her guest; perhaps she was feeling too cozy. She and Naomi were reading at a low table set atop a charcoal brazier. A thick quilt spread over the sides of the table so their legs were 15 tucked inside with the heat. “Who is it at this hour, in this weather?” Chie questioned as she picked the name card off the maid’s lacquer tray.</p>
+                  
+                  </div>
+                  </div>
+                <div class="col-md-6 answer-data padding-question">
+                  <div class="question  mr-3 ">
+                    <p class="question__head pt-4 mb-4">Which choice best describes what happens in the passage?</p>
+
+                    
+                    <div class="radio-div">
+                    <input type="radio" name="example" id="one" value="one">
+                    <label for="one" class="label-radio">A- One Character Argues With Another Character Who Intrudes On Her Home</label>
+                  </div>
+                  
+                    <div class="radio-div">
+                    <input type="radio" name="example" id="two" value="two">
+                    <label for="two" class="label-radio">B- One Character Receives A Surprising Request From Another Character</label>
+                  </div>
+                  
+                    <div class="radio-div">
+                    <input type="radio" name="example" id="three" value="three">
+                    <label for="three" class="label-radio">C- One Character Reminisces About Choices She Has Made Over The Years</label>
+                    </div>
+                  
+                    <div class="radio-div">
+                    <input type="radio" name="example" id=  "four"  value="four">
+                    <label for="four"class="label-radio">D- One Character Criticizes Another Character For Pursuing An Unexpected Course Of Action</label>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          </section>
+        -->
+              <div class="pagination-row pt-5 ">
+                <div class="pagination-div ">
+                  <button onclick="previousQuestion()" id="next-btn" class="btn btn-pag">   <svg class="svg-pagination"  data-src="/images/leftAnglePag.svg"></svg></button>
+                        <ul class="pagination ml-3 pt-3 pl-4 pb-3   "></ul>
+                  <button onclick="nextQuestion()" class="btn btn-pag ">  <svg class="svg-pagination"  data-src="/images/rightAnglePag.svg"></svg></button>
+                </div>
+              </div>
+      
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+<script src="/exam.js"></script>
+</body>
+</html>
